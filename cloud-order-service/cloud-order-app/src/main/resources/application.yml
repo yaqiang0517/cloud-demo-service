@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: cloud-order-service
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://mysql-01.dev.center.voneyun.com:3306/mp_java_iam?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    password: DEV_dev%123
+    username: java_iam_app
+
+logging:
+  level:
+    root: debug
+  config: classpath:logback-spring.xml
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

@@ -1,0 +1,32 @@
+HELP.md
+.gradle
+build/
+docker/
+gradle/
+logs/
+null/
+tmp/
+**/build/
+**/logs/
+**/unknown.out
+Dockerfile
+LOG_DIR_IS_UNDEFINED/
+null/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.idea/*
+
+### VS Code ###
+.vscode/
+
+gradlew
+gradlew.bat
+
+.DS_Store
+polaris/
